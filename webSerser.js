@@ -1,6 +1,5 @@
 const http = require("http");
 const fs = require("fs");
-const { DEFAULT_ECDH_CURVE } = require("tls");
 
 const myserver = http.createServer((req, res) => {
   const log = `${Date.now()}: ${req.url} New record created\n`;
